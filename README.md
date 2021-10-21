@@ -7,7 +7,7 @@ Repository:
     https://github.com/mingmanhk/workout-tracker
 
 Deployment:
-    https://victor-tech-blog.herokuapp.com
+    https://workout-tracker-express-01.herokuapp.com/
      
 Demo
     <img src="./src/demo.gif"/>
