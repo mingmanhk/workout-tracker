@@ -9,10 +9,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout_tracker", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+mongoose.connect(
+  process.env.MONGODB_URI ||
+    "mongodb+srv://mingmanhk:<password>@cluster0.focfw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+  }
+);
+mingmannk:hVyp3svkFXSNq0Aj;
 
 // routes
 app.use(require("./routes/apiRoutes.js"));
