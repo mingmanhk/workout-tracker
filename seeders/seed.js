@@ -1,14 +1,10 @@
-const mongoose = require("mongoose");
+
+require("dotenv").config({ path: "./config.env" });
+
+const connectDB = require("./config/db");
 const db = require('../models');
 
-const uri =
-  "mongodb+srv://mingmanhk:hVyp3svkFXSNq0Aj@cluster0.focfw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-
-mongoose.connect(uri, {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true,
-});
+connectDB();
 
 const workoutSeed = [
   {
