@@ -1,7 +1,10 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const db = require('../models');
 
-mongoose.connect("mongodb://localhost/workout_tracker", {
+const uri =
+  "mongodb+srv://mingmanhk:hVyp3svkFXSNq0Aj@cluster0.focfw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,

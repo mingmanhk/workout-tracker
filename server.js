@@ -11,13 +11,13 @@ app.use(express.static("public"));
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-    "mongodb+srv://mingmanhk:<password>@cluster0.focfw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongodb+srv://mingmanhk:hVyp3svkFXSNq0Aj@cluster0.focfw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useFindAndModify: false,
   }
 );
-mingmannk:hVyp3svkFXSNq0Aj;
+mingmannk:;
 
 // routes
 app.use(require("./routes/apiRoutes.js"));
